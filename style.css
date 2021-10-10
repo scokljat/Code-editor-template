@@ -18,7 +18,9 @@ body {
   text-align: center;
   background: #f0f9ff;
 }
-
+.navWrap {
+  display: none;
+}
 .menuWrap {
   display: flex;
   justify-content: flex-end;
@@ -39,11 +41,21 @@ body {
   transition: 0.4s;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-rows: 20% 80%;
+.otherDown {
+  padding-bottom: 15px;
 }
-.druga {
+
+.downloadBtn {
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  color: #ffff;
+  border-radius: 5px;
+  border: 0;
+  margin: 15px;
+}
+
+.features {
   background: #ffff;
   display: flex;
   flex-direction: column;
@@ -78,7 +90,7 @@ body {
   border-radius: 5px;
   margin: 10px 0;
 }
-.preproccesor {
+.preprocessor {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,17 +145,41 @@ a {
   color: #84b7dd;
   text-decoration-line: none;
 }
-
+.druga {
+  display: flex;
+  flex-direction: column;
+}
+.featuresHead {
+  text-align: center;
+}
+.noviflex {
+  margin: 0 50px;
+}
+.unutrasnja {
+  margin: 0 50px;
+}
 @media (min-width: 576px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: min-content;
+  }
+  .menuWrap {
+    display: none;
+  }
   .navbar {
     background-color: #f0f9ff;
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
     width: 100%;
     height: 70px;
     text-align: center;
   }
-
+  .unutrasnja {
+    margin: 0 70px;
+  }
   .navbar a {
     display: inline-block;
     color: black;
@@ -157,14 +193,14 @@ a {
     display: flex;
     justify-content: center;
   }
-  .downloadBtn {
+  .navBtn {
     width: 150px;
     height: 40px;
     background-color: black;
     color: #ffff;
     border-radius: 5px;
     border: 0;
-    margin-left: 200px;
+    margin-top: 10px;
   }
   .desktop {
     display: flex;
@@ -192,5 +228,40 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0 300px;
+  }
+  .noviflex {
+    display: flex;
+    margin: 0 70px;
+  }
+  .flex1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .flex2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .featuresHead {
+    text-align: center;
+  }
+  .features {
+    display: flex;
+    flex-direction: row;
+    margin: 0 70px;
+  }
+  .editors {
+    margin: 10px 10px;
+  }
+  .realTime {
+    margin: 10px 10px;
+  }
+  .preprocessor {
+    margin: 10px 10px;
+  }
+  .source {
+    margin-top: 50px;
   }
 }
