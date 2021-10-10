@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -30,13 +38,13 @@ body {
   margin: 5px 0;
   transition: 0.4s;
 }
+
 .zajednicka {
   display: grid;
-  grid-template-rows: 50% 50%;
-  gap: 30px;
+  grid-template-rows: 20% 80%;
 }
 .druga {
-  background: #ffffff;
+  background: #ffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,4 +89,41 @@ body {
   border: 1px solid #e6e6e6;
   border-radius: 5px;
   margin: 20px 0;
+}
+#footer {
+  background: black;
+  color: #84b7dd;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.links {
+  margin-left: 25px;
+  margin-bottom: 0;
+  color: #d6d6d7;
+}
+.videos {
+  margin-left: 25px;
+  margin-bottom: 0;
+  color: #d6d6d7;
+}
+.involve {
+  margin-left: 25px;
+  margin-bottom: 0;
+  color: #d6d6d7;
+}
+.touch {
+  margin-left: 25px;
+  margin-bottom: 0;
+  color: #d6d6d7;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 25px;
+  font-size: 13px;
+  color: #8b9096;
+  padding: 15px 0;
 }
