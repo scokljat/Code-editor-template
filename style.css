@@ -10,14 +10,6 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
 }
-.source {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #f0f9ff;
-}
 .navWrap {
   display: none;
 }
@@ -40,11 +32,17 @@ body {
   margin: 5px 0;
   transition: 0.4s;
 }
-
-.otherDown {
-  padding-bottom: 15px;
+.source {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f0f9ff;
 }
-
+.modernSource {
+  margin: 0 50px;
+}
 .downloadBtn {
   width: 150px;
   height: 40px;
@@ -54,7 +52,19 @@ body {
   border: 0;
   margin: 15px;
 }
-
+.otherDown {
+  padding-bottom: 15px;
+}
+.definition {
+  display: flex;
+  flex-direction: column;
+}
+.textEditor {
+  margin: 0 50px;
+}
+.featuresHead {
+  text-align: center;
+}
 .features {
   background: #ffff;
   display: flex;
@@ -64,7 +74,16 @@ body {
   text-align: left;
   margin: 0 15px;
 }
-
+.numberCircle {
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  background-color: #fff1e4;
+  width: 50px;
+  height: 50px;
+}
 .editors {
   display: flex;
   flex-direction: column;
@@ -77,7 +96,6 @@ body {
   border-radius: 5px;
   margin: 10px 0;
 }
-
 .realTime {
   display: flex;
   flex-direction: column;
@@ -145,24 +163,32 @@ a {
   color: #84b7dd;
   text-decoration-line: none;
 }
-.druga {
-  display: flex;
-  flex-direction: column;
-}
-.featuresHead {
-  text-align: center;
-}
-.noviflex {
-  margin: 0 50px;
-}
-.unutrasnja {
-  margin: 0 50px;
-}
 @media (min-width: 576px) {
-  .wrapper {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    height: min-content;
+  .features {
+    display: flex;
+    justify-content: center;
+    margin: 30px 50px;
+  }
+  .nn {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .bb {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .editors {
+    flex: 1;
+    margin: 0 10px;
+  }
+  .realTime {
+    flex: 1;
+    margin: 0 10px;
+  }
+  .preprocessor {
+    height: 260px;
+    padding: 20px 30px;
+    margin: 0 150px;
   }
   .menuWrap {
     display: none;
@@ -176,9 +202,6 @@ a {
     width: 100%;
     height: 70px;
     text-align: center;
-  }
-  .unutrasnja {
-    margin: 0 70px;
   }
   .navbar a {
     display: inline-block;
@@ -202,24 +225,47 @@ a {
     border: 0;
     margin-top: 10px;
   }
-  .desktop {
+  .source {
+    margin-top: 50px;
+  }
+  .modernSource {
+    margin: 0 70px;
+  }
+  .textEditor {
+    display: flex;
+    margin: 0 70px;
+  }
+  .visualTools {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .javaScript {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .featuresHead {
+    text-align: center;
+  }
+  .footerFeatures {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .l {
+  .linksWrap {
     display: flex;
     flex-direction: column;
   }
-  .v {
+  .videosWrap {
     display: flex;
     flex-direction: column;
   }
-  .i {
+  .involveWrap {
     display: flex;
     flex-direction: column;
   }
-  .t {
+  .touchWrap {
     display: flex;
     flex-direction: column;
   }
@@ -229,17 +275,59 @@ a {
     align-items: center;
     margin: 0 300px;
   }
-  .noviflex {
+}
+@media (min-width: 1100px) {
+  .menuWrap {
+    display: none;
+  }
+  .navbar {
+    background-color: #f0f9ff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+  }
+  .navbar a {
+    display: inline-block;
+    color: black;
+    padding: 25px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    text-decoration-line: underline;
+  }
+  .navWrap {
+    display: flex;
+    justify-content: center;
+  }
+  .navBtn {
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: #ffff;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 10px;
+  }
+  .source {
+    margin-top: 50px;
+  }
+  .modernSource {
+    margin: 0 70px;
+  }
+  .textEditor {
     display: flex;
     margin: 0 70px;
   }
-  .flex1 {
+  .visualTools {
     display: flex;
     flex-direction: column;
     flex: 1;
   }
-
-  .flex2 {
+  .javaScript {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -261,7 +349,31 @@ a {
   .preprocessor {
     margin: 10px 10px;
   }
-  .source {
-    margin-top: 50px;
+  .footerFeatures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .linksWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .videosWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .involveWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .touchWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 300px;
   }
 }
