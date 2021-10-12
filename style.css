@@ -178,26 +178,25 @@ a {
     justify-content: center;
     margin: 30px 50px;
   }
-  .nn {
+  .editorsReal {
     display: flex;
     margin-bottom: 10px;
   }
-  .bb {
+  .preprocessorSupport {
     display: flex;
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
   }
   .editors {
-    flex: 1;
+    max-width: 350px;
     margin: 0 10px;
   }
   .realTime {
-    flex: 1;
+    max-width: 350px;
     margin: 0 10px;
   }
   .preprocessor {
-    height: 260px;
-    padding: 20px 30px;
-    margin: 0 150px;
+    max-width: 350px;
   }
   .menuWrap {
     display: none;
@@ -260,7 +259,7 @@ a {
   .footerFeatures {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
   }
   .linksWrap {
     display: flex;
@@ -347,21 +346,15 @@ a {
   .features {
     display: flex;
     flex-direction: row;
-    margin: 0 70px;
   }
-  .editors {
-    margin: 10px 10px;
+  .editorsReal {
+    margin: 15px 10px;
   }
-  .realTime {
-    margin: 10px 10px;
-  }
-  .preprocessor {
-    margin: 10px 10px;
-  }
+
   .footerFeatures {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
   }
   .linksWrap {
     display: flex;
@@ -371,7 +364,7 @@ a {
     display: flex;
     flex-direction: column;
   }
-  .involveWrap {
+  .involve {
     display: flex;
     flex-direction: column;
   }
