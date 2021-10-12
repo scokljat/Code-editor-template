@@ -243,6 +243,11 @@ a {
     display: flex;
     margin: 0 70px;
   }
+  .textEditorContribute {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
   .visualTools {
     display: flex;
     flex-direction: column;
@@ -329,6 +334,12 @@ a {
   .textEditor {
     display: flex;
     margin: 0 70px;
+  }
+  .textEditorContribute {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 50px;
   }
   .visualTools {
     display: flex;
