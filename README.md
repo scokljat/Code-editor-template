@@ -10,7 +10,7 @@ Inspired by [Brackets](http://brackets.io/).
 
 ## Assets
 
-[Inter]("https://fonts.google.com/specimen/Inter?query=inter")
+[Inter](https://fonts.google.com/specimen/Inter?query=inter)
 
 ## License
 
